@@ -1,0 +1,10 @@
+version: '3'
+services:
+  # node server
+  node_app:
+    # 基于当前目录的Dockerfile 打包镜像
+    build: .
+    # 端口映射 宿主机的8001端口 映射容器的3000端口
+    ports:
+      - '8001:3000'
+# TODO: 完善
